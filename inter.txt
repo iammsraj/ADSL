@@ -1,0 +1,51 @@
+Bookcost.java
+
+import mypack.*;
+	public class Bookcost1 implements total {
+
+		   public void totalprice() {
+		      System.out.println("total cost of books");
+			 int totalcost =price*4;
+		      System.out.println(+totalcost);
+		   }
+		   public static void main(String args[]) {
+			  Book b1=new Book();
+			 
+			   b1.show();
+			   
+		      Bookcost1 b = new Bookcost1();
+		      b.totalprice();
+			
+		   }
+		} 
+
+
+total.java
+
+package mypack;
+
+public interface total {
+	public void totalprice();
+	int price=20;
+
+}
+
+
+
+Book.java
+
+package mypack;
+
+public class Book {
+	String bookname="Cpp";
+	 String author="Kanetkar";
+	 
+	 public void show()
+	 {
+		
+	  System.out.println(bookname);
+	  System.out.println(author);
+	 }
+	}
+	
+
